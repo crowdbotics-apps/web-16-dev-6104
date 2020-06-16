@@ -15,6 +15,16 @@ class CustomText(models.Model):
         blank=True,
         related_name="customtext_zfasg",
     )
+    hfkhfkjh = models.ManyToManyField(
+        "home.HomePage", blank=True, related_name="customtext_hfkhfkjh",
+    )
+    nvgkhvjhv = models.ForeignKey(
+        "home.HomePage",
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        related_name="customtext_nvgkhvjhv",
+    )
 
     def __str__(self):
         return self.title
